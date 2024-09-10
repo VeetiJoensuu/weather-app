@@ -21,3 +21,6 @@ function doGet(e) {
 
   return ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
 }
+
+Background image is free for use under the Pixabay Content License:
+https://pixabay.com/service/license-summary/
