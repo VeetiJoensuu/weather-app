@@ -1,0 +1,27 @@
+name: Manual Rollback
+
+on:
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: 'The commit SHA to rollback to'
+        required: true
+      branch:
+        description: 'The branch to rollback'
+        required: true
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.inputs.branch }}
+        fetch-depth: 0
+
+    - name: Rollback to specified commit
+      run: |
+        git reset --hard ${{ github.event.inputs.revision }}
+        git push --force

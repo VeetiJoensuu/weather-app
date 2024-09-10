@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  background-image: url('image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.temp-max {
+  background-color: rgb(102, 13, 13);
+  color: white;
+}
+
+.temp-high {
+  background-color: red;
+  color: white;
+}
+
+.temp-medium {
+  background-color: green;
+  color: white;
+}
+
+.temp-low {
+  background-color: blue;
+  color: white;
+}
+
+.temp-min {
+  background-color: rgb(3, 3, 107);
+  color: white;
+}
+
+.vertical-line.temp-max,
+.city-name.temp-max,
+.description.temp-max {
+  background-color: rgb(102, 13, 13);
+  color: white;
+}
+
+.vertical-line.temp-high,
+.city-name.temp-high,
+.description.temp-high {
+  background-color: red;
+  color: white;
+}
+
+.vertical-line.temp-medium,
+.city-name.temp-medium,
+.description.temp-medium {
+  background-color: green;
+  color: white;
+}
+
+.vertical-line.temp-low,
+.city-name.temp-low,
+.description.temp-low {
+  background-color: blue;
+  color: white;
+}
+
+.vertical-line.temp-min,
+.city-name.temp-min,
+.description.temp-min {
+  background-color: rgb(3, 3, 107);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

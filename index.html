@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <p><a href="https://openweathermap.org/">Weather data from OpenWeatherMap</a></p>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="addCity()">Add City</button>
+    <table id="city-table">
+        <thead>
+            <tr>
+                <th>City / Town  (click to open Wikipedia article)</th>
+                <th>Temperature</th>
+                <th>Description</th>
+                <th>Local Time & Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="functions.js"></script>
+</body>
+</html>
