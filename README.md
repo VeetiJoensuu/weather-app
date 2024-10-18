@@ -2,10 +2,10 @@ GitHub Pages
 https://veetijoensuu.github.io/weather_app/
 
 
-Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub pages site)
+Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub Pages site)
 
 function doGet(e) {
-  const apiKey = '{my OpenWeatherMap API key}';
+  const apiKey = PropertiesService.getScriptProperties().getProperty('API_KEY');
   const city = e.parameter.q;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const response = UrlFetchApp.fetch(url);
