@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Weather App</h1>
-    <p><a href="https://openweathermap.org/">Weather data from OpenWeatherMap</a></p>
-    <input type="text" id="cityInput" placeholder="Enter city name">
-    <button onclick="addCity()">Add City</button>
-    <table id="city-table">
-        <thead>
-            <tr>
-                <th>City / Town  (click to open Wikipedia article)</th>
-                <th>Temperature</th>
-                <th>Description</th>
-                <th>Local Time & Date</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <p><a href="https://openweathermap.org/">Weather data from OpenWeatherMap</a></p>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="addCity()">Add City</button>
+        <table id="city-table">
+            <thead>
+                <tr>
+                    <th>City / Town (click to open Wikipedia article)</th>
+                    <th>Temperature</th>
+                    <th>Description</th>
+                    <th>Local Time & Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <footer>
+        <p><a href="https://github.com/VeetiJoensuu/weather_app">Link to GitHub repository</a></p>
+    </footer>
     <script src="functions.js"></script>
 </body>
 </html>
