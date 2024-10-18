@@ -2,10 +2,10 @@ GitHub Pages
 https://veetijoensuu.github.io/weather_app/
 
 
-Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub Pages site)
+Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub pages site)
 
 function doGet(e) {
-  const apiKey = PropertiesService.getScriptProperties().getProperty('API_KEY');
+  const apiKey = '{my OpenWeatherMap API key}';
   const city = e.parameter.q;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const response = UrlFetchApp.fetch(url);
@@ -28,11 +28,11 @@ https://pixabay.com/service/license-summary/
 __________________________________________________________________________
 WEB-SOVELLUSTEN PERUSTEET (5 OP) arviointikriteerit
 
-HTML 1/5:  index.html (lines 1-9, 33-34)
-HTML 2/5:  index.html (lines 10-31)
-HTML 3/5:  index.html (lines 14-16)
-HTML 4/5:  index.html (lines 17-27)
-HTML 5/5:  index.html (lines 10, 12, 13, 28, 29, 31)
+HTML 1/5:  index.html (lines 1-10, 34-35)
+HTML 2/5:  index.html (lines 11-32)
+HTML 3/5:  index.html (lines 15-17)
+HTML 4/5:  index.html (lines 18-28)
+HTML 5/5:  index.html (lines 11, 13, 14, 29, 30, 32)
 
 
 CSS 1/5:  style.css (lines 2, 11)
