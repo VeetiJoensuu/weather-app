@@ -32,7 +32,7 @@ const cities = [
 ];
   
   async function getWeatherData(city) {
-    const url = `https://script.google.com/macros/s/AKfycbxevclMn6KgSIRC7NJlqAYHb9rYOmM2h6_SfCypn7j5sgtGIOCiuPaZF5wtIcl2-8wI/exec?q=${city.name}`;
+    const url = `https://script.google.com/macros/s/AKfycbxBg9vVEBKWm4Peq8zpMJTevLE5o0SqRDXArFU0vRlZPZK4KXf1HY62Cqxp-nNl9gFq/exec?q=${city.name}`;
     try {
         const response = await fetch(url);
         if (!response.ok) {
