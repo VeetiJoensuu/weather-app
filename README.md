@@ -2,7 +2,7 @@ GitHub Pages
 https://veetijoensuu.github.io/weather_app/
 
 
-Google Apps Script (GitHub Pages uses HTTPS and doesn't allow direct requests to OpenWeatherMap because of HTTP response)
+Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub pages site)
 
 function doGet(e) {
   const apiKey = '{my OpenWeatherMap API key}';
