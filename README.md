@@ -25,55 +25,76 @@ function doGet(e) {
 Background image is free for use under the Pixabay Content License:
 https://pixabay.com/service/license-summary/
 
-__________________________________________________________________________
+_______________________________________________________________________________________________________________
 WEB-SOVELLUSTEN PERUSTEET (5 OP) arviointikriteerit
 
-HTML 1/5:  index.html (lines 1-10, 34-35)
-HTML 2/5:  index.html (lines 11-32)
-HTML 3/5:  index.html (lines 15-17)
-HTML 4/5:  index.html (lines 18-28)
-HTML 5/5:  index.html (lines 11, 13, 14, 29, 30, 32)
+HTML (25%)
+1. **Basic HTML structure is present**:
+   - index.html (lines 1-10, 34-35)
+
+2. **HTML structure with clear content differentiation (headings, paragraphs, lists)**:
+   - index.html (lines 11-32)
+
+3. **Use of forms, links, and media**:
+   - index.html (lines 15-17)
+
+4. **Tables are effectively used**:
+   - index.html (lines 18-28)
+
+5. **Consistent use of semantic HTML throughout, ensuring better structure and understanding of the content**:
+   - index.html (lines 11, 13, 14, 29, 30, 32)
+
+CSS (25%)
+1. **Basic CSS styling (colors, fonts)**:
+   - style.css (lines 2, 11)**:
+
+2. **Use of classes and IDs to style specific elements**:
+   - style.css (lines 38, 43, 48, 53, 58)
+
+3. **Implementation of responsive design elements**:
+   - 
+
+4. **Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)**:
+   - 
+
+5. **Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience**:
+   - style.css
 
 
-CSS 1/5:  style.css (lines 2, 11)
-CSS 2/5:  style.css (lines 38, 43, 48, 53, 58)
-CSS 3/5:  -
-CSS 4/5:  -
-CSS 5/5:  style.css
+JavaScript Basics (25%)
+1. **Simple interactions (like alerts on button click)**:
+   - functions.js (lines 135, 138): alert is used.
 
+2. **Multiple event listeners and basic DOM manipulations**:
+   - functions.js (lines 153-160): updating weather data every minute.
+   - functions.js (lines 130-143): adding a city and updating UI.
 
-Javascript Basics 1/5:
-functions.js (lines 115-119: waiting for the user to press Enter,
-lines 121-134: alert is used)
+3. **Use of arrays, objects, and functions**:
+   - functions.js (lines 57-88): array and objects.
+   - functions.js: various functions.
 
-Javascript Basics 2/5:
-functions.js (lines 115-119: listening for Enter key press,
-line 149: updating weather data every minute,
-lines 121-134: adding a city and updating UI)
+4. **Advanced logic, looping through data, and dynamic DOM updates**:
+   - functions.js (line 105): looping through the cities array to fetch weather data.
+   - functions.js (line 106): sorting weather data based on temperature.
+   - functions.js (lines 130-143): adding a new city to the list and dynamically updating the display.
 
-Javascript Basics 3/5:
-functions.js (lines 1-32: array and objects, lines 34-147 functions)
+5. **Consistent use of Object-Oriented JavaScript principles**:
+   - functions.js (lines 1, 9): classes defined
+   - functions.js (lines 58-87, 98): class objects being created 
 
-Javascript Basics 4/5:
-functions.js (line 88: sorting weather data based on temperature,
-line 87: looping through the cities array to fetch weather data,
-lines 121-134: adding a new city to the list and dynamically updating the display)
+Asynchronous Operations (25%)
+1. **Use of timers**:
+   - functions.js (line (160): timer to update data).
 
-Javascript Basics 5/5: -
+2. **Successful implementation of an AJAX call or Fetch**:
+   - functions.js (lines 90-102): fetching weather data from my Google Apps Script, which fetches weather data from OpenWeather API.
 
+3. **Data from the asynchronous call is displayed on the webpage**:
+   - functions.js (lines 104-122): displayWeather() fetches data for all cities, sorts by temperature, updates the DOM.
 
-Asynchronous Operations 1/5:
-functions.js (line 149: timer to update data)
+4. **Error handling is implemented (for failed API calls, etc.)**:
+   - functions.js (lines 92-101): try-catch block with error logging.
 
-Asynchronous Operations 2/5:
-functions.js (lines 34-46: fetching weather data from my Google Apps Script, that fetches weather data from OpenWeather API)
-
-Asynchronous Operations 3/5:
-functions.js (lines 86-113: displayWeather() fetches data for all cities, sorts by temperature, updates the DOM)
-
-Asynchronous Operations 4/5:
-functions.js (lines 36-45: try-catch block with error logging)
-
-Asynchronous Operations 5/5:
-functions.js (line 88: sorting weather data by temperature before displaying it,
-lines 72-84: categorizing weather data by temperature, setting different colours for different temperature ranges)
+5. **Effective use of asynchronous data to enhance user experience (like filtering, sorting)**:
+   - functions.js (line 106 ): sorting weather data by temperature before displaying it.
+   - functions.js (lines 41-54): categorizing weather data by temperature, setting different colors for different temperature ranges.
