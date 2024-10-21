@@ -1,11 +1,16 @@
 GitHub Pages
 https://veetijoensuu.github.io/weather_app/
 
+Background image is free for use under the Pixabay Content License:
+https://pixabay.com/service/license-summary/
 
+Icon is from iconarchive.com
+_________________________________________________________________________________________________________________________
 Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub pages site)
+https://developers.google.com/apps-script
 
 function doGet(e) {
-  const apiKey = '{my OpenWeatherMap API key}';
+  const apiKey = PropertiesService.getScriptProperties().getProperty('API_KEY');
   const city = e.parameter.q;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const response = UrlFetchApp.fetch(url);
@@ -21,11 +26,7 @@ function doGet(e) {
 
   return ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
 }
-
-Background image is free for use under the Pixabay Content License:
-https://pixabay.com/service/license-summary/
-
-_______________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________
 WEB-SOVELLUSTEN PERUSTEET (5 OP) arviointikriteerit
 
 HTML (25%)
@@ -46,7 +47,7 @@ HTML (25%)
 
 CSS (25%)
 1. **Basic CSS styling (colors, fonts)**:
-   - style.css (lines 2, 11)**:
+   - style.css (lines 2, 11):
 
 2. **Use of classes and IDs to style specific elements**:
    - style.css (lines 38, 43, 48, 53, 58)
