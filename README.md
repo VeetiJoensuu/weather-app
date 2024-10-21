@@ -52,10 +52,10 @@ CSS (25%)
    - style.css (lines 38, 43, 48, 53, 58)
 
 3. **Implementation of responsive design elements**:
-   - 
+   - style.css (lines 107-117)
 
 4. **Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)**:
-   - 
+   - style.css (lines 119-136)
 
 5. **Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience**:
    - style.css
@@ -84,7 +84,7 @@ JavaScript Basics (25%)
 
 Asynchronous Operations (25%)
 1. **Use of timers**:
-   - functions.js (line (160): timer to update data).
+   - functions.js (line 160): timer to update data.
 
 2. **Successful implementation of an AJAX call or Fetch**:
    - functions.js (lines 90-102): fetching weather data from my Google Apps Script, which fetches weather data from OpenWeather API.
