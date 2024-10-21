@@ -103,3 +103,34 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+header, main, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+thead, tbody, tr {
+  display: contents;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
