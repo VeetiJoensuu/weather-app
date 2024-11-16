@@ -1,13 +1,7 @@
-GitHub Pages
-https://veetijoensuu.github.io/weather_app/
-
-Background image is free for use under the Pixabay Content License:
-https://pixabay.com/service/license-summary/
-
-Icon is from iconarchive.com
-_________________________________________________________________________________________________________________________
-Google Apps Script (It is good practice to hide your API keys, which was difficult to do on a static GitHub pages site)
-https://developers.google.com/apps-script
+GitHub Pages:
+https://veetijoensuu.github.io/weather-app/
+_____________________________________________________________________________________________________________________________________
+Google Apps Script:
 
 function doGet(e) {
   const apiKey = PropertiesService.getScriptProperties().getProperty('API_KEY');
@@ -26,7 +20,7 @@ function doGet(e) {
 
   return ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
 }
-_________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________
 WEB-SOVELLUSTEN PERUSTEET (5 OP) arviointikriteerit
 
 HTML (25%)
@@ -99,3 +93,8 @@ Asynchronous Operations (25%)
 5. **Effective use of asynchronous data to enhance user experience (like filtering, sorting)**:
    - functions.js (line 106 ): sorting weather data by temperature before displaying it.
    - functions.js (lines 41-54): categorizing weather data by temperature, setting different colors for different temperature ranges.
+_____________________________________________________________________________________________________________________________________
+Background image is free for use under the Pixabay Content License:
+https://pixabay.com/service/license-summary/
+
+Icon is from iconarchive.com
